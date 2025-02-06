@@ -27,7 +27,30 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    height: 68px;
+    line-height: 68px;
+    min-width: 168px;
+    border-radius: 1.4rem;
+    background: #1ebfc1;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 /* Header */
+.header {
+    background-color: #fff;
+}
+
 .header .body {
     display: flex;
     align-items: center;
@@ -84,4 +107,201 @@ a {
     position: sticky;
     top: -28px;
     z-index: 1;
+}
+
+/* Hero */
+.hero {
+    margin-top: 50px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Hero left */
+.hero .main-block {
+    width: 51%;
+}
+
+.main-block .slogan {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.main-block .title {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+.main-block .desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    max-width: 374px;
+}
+
+.main-block .cta-actions {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.main-block .cta-actions .btn-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    border-radius: 50%;
+    color: #1ebfc1;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-block .cta-actions .btn-play:hover {
+    box-shadow: 0px 22px 50px 0px #0000000d;
+}
+
+/* Hero right */
+.hero .media-block {
+    position: relative;
+}
+
+.hero .media-block .media-img {
+    width: 576px;
+    height: 631px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero .media-courses {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    border-radius: 1.8rem;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-courses .book-icon {
+    margin-right: 16px;
+    position: relative;
+    width: 36px;
+    height: 40px;
+    border-radius: 4px 2px 2px 4px;
+    background-color: #ff8282;
+}
+
+.media-courses .book-icon::after {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 8px;
+    display: block;
+    content: "";
+    width: 2.8rem;
+    height: 0.4rem;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.media-courses span {
+    color: #0d1111;
+    max-width: 55px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.media-scheduled {
+    position: absolute;
+    bottom: 146px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    border-radius: 1.8rem;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-scheduled span {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.media-scheduled img {
+    margin-top: 10px;
+}
+
+.media-students {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    border-radius: 1.8rem;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-students span {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.media-students .list-students {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.media-students .student {
+    margin-left: -8px;
+}
+
+.media-students .student:first-child {
+    margin-left: 0;
+}
+
+.media-students .student img {
+    width: 100%;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.media-students .student.number {
+    width: 100%;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    line-height: 33px;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
